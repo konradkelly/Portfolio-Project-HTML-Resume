@@ -1,0 +1,72 @@
+    body { margin: 0.75in; font-family: Arial, sans-serif; line-height: 1.6; background: #f9f9f9; color: #222; }
+    .header { position: relative; text-align: center; margin-bottom: 1.5em; padding-top: 0; }
+    .header h1 { font-size: 2em; margin-bottom: 0.2em; }
+    .header .contact { font-size: 1em; color: #555; margin-bottom: 0.5em; }
+  .header .contact a { color: #325a7a; text-decoration: none; }
+  .header .contact a:hover { text-decoration: underline; }
+    .photo-top-right {
+      position: absolute;
+      top: 0.5em;
+      right: 0.5em;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid #ccc;
+      background: #fff;
+      transition: width 0.3s, height 0.3s;
+      max-width: 25vw;
+      max-height: 25vw;
+      min-width: 60px;
+      min-height: 60px;
+      box-sizing: border-box;
+    }
+
+    .section { margin-bottom: 1.5em; }
+    .section-title { font-size: 1.2em; color: #325a7a; border-bottom: 1px solid #ccc; padding-bottom: 0.15em; font-weight: bold; margin-bottom: 0.5em; }
+    h2 { font-size: 1.2em; color: #325a7a; border-bottom: 1px solid #ccc; padding-bottom: 0.15em;}
+    h3 { font-size: 1.05em; color: #4e7eb2; font-weight: bold; margin-top: 1em; margin-bottom: 0.4em;}
+    .skills, .tags { margin: 0.3em 0; }
+    .skill-tag { display: inline-block; background: #e0e0e0; color: #222; padding: 3px 8px; margin: 3px 3px 3px 0; border-radius: 6px; font-size: 0.93em; font-family: Arial, sans-serif; }
+    .item-list { list-style-type: disc; margin-left: 1.5em; }
+    .experience-title { font-weight: bold; margin-top: 1em; }
+    .date-range { float: right; font-style: italic; color: #777; }
+    .table { width: 100%; border-collapse: collapse; margin-bottom: 0.8em; }
+    .table td { padding: 3px 0; vertical-align: top;}
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 1200px) {
+      body { margin: 3vw; }
+      .header { padding-right: 0; padding-top: 0; }
+      .photo-top-right {
+        position: static;
+        display: block;
+        margin: 0 auto 1em auto;
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        min-height: 100px;
+        max-width: 100px;
+        max-height: 100px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .header { padding-right: 0; padding-top: 0; }
+      .photo-top-right {
+        position: static;
+        display: block;
+        margin: 0 auto 1em auto;
+        width: 90px;
+        height: 90px;
+        min-width: 90px;
+        min-height: 90px;
+        max-width: 90px;
+        max-height: 90px;
+      }
+
+      .header {
+        text-align: center;
+        padding-top: 0;
+      }
+    }
